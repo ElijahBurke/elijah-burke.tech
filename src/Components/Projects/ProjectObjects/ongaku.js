@@ -5,7 +5,7 @@ database and marketplace) API with an emphasis on discovering music that they wo
 
 export default {
   title: 'Ongaku',
-  img: [{ title: 'Ongaku Poster', img: OngakuImg }],
+  img: [{ title: 'Demo Video', img: 'https://www.youtube.com/embed/KVgAz-cXcDc', video: true }, { title: 'Ongaku Poster', img: OngakuImg }],
   github: 'https://github.com/ElijahBurke/ongaku',
   url: undefined,
   desc,

@@ -6,7 +6,7 @@ export default {
   title: 'Sorting Algorithm Visualizer',
   img: [{ title: 'Quick Sort', img: 'https://media.giphy.com/media/t1ewsVnzcXh2iOjzDR/giphy.gif' }, { title: 'Merge Sort', img: 'https://media.giphy.com/media/HF0J39tRK2auJXpTzs/giphy.gif' }],
   github: 'https://github.com/ElijahBurke/react-sorting',
-  url: undefined,
+  url: 'https://react-sorting.netlify.app/',
   desc,
   stack: ['React', 'Redux', 'Hooks', 'NodeJS', 'Webpak', ''],
 };

@@ -8,7 +8,7 @@ export default {
   title: 'MMAPI',
   img: [{ title: 'Demo Video', img: 'https://www.youtube.com/watch?v=itit15pqOjA', video: true }, { title: 'Docs', img: MMAPIImg }],
   github: 'https://github.com/ElijahBurke/MMAPI',
-  url: undefined,
+  url: 'https://mmapi.netlify.app/',
   desc,
   stack: ['React', 'GraphQL', 'ExpressJS', 'NodeJS', 'PostgreSQL', 'Sequelize'],
 };

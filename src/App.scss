@@ -1,0 +1,36 @@
+html {
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+}
+
+section {
+  margin-left: -1%; 
+  min-height: 800px;
+  @media only screen and (min-height: 800px) {
+      scroll-snap-align: start;
+  }
+  &.Hero__hero {
+    min-height: 400px;
+  }
+}
+
+a:focus {
+  outline: none;
+}
+
+.__small {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--sky-gradient);
+  div {
+    font-size: 4rem;
+    color: var(--text);
+    font-weight: 400;
+    width: 80%;
+    text-align: center;
+  }
+}

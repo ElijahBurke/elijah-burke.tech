@@ -1,0 +1,31 @@
+@import '../../../variables.scss';
+.Nav__nav {
+  z-index: 3;
+  width: 80%;
+  @include flex-center;
+  justify-content: space-between;
+  height: 10vh;
+  .nav__left {
+    display: flex;
+    align-items: center;
+    .left__contact {
+      display: flex;
+      a {
+        margin: 0% 10px;
+        img {
+          width: 40px;
+        }
+      } 
+    }
+  }
+  .nav__right {
+    display: flex;
+    .right__borderless {
+      @include button-default(#ffffff);
+      border: none;
+    }
+    .right__contact {
+      @include button-default(#ffffff);
+    }
+  }
+}

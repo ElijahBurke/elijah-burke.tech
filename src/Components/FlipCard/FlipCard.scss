@@ -1,0 +1,42 @@
+.card{
+  position: relative;
+  margin: 2%;
+  width: 28%;
+  height: 45%;
+}
+.front,.back{
+  // background: var(--switch-border);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border: 1px solid var(--switch-border);
+  background: var(--switch-background);
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+  animation: shakeFront 2s ease 1s infinite;
+}
+.back{
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+  // animation-play-state: paused;
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+@keyframes shakeFront {
+  0% {transform: perspective(600px) rotateY(0deg);}
+  10% { transform: perspective(600px) rotateY(-5deg);}
+  11% { transform: perspective(600px) rotateY(0deg);}
+  20% {transform: perspective(600px) rotateY(-5deg);}
+  21% {transform: perspective(600px) rotateY(0deg);}
+  100% {transform: perspective(600px) rotateY(0deg);}
+}

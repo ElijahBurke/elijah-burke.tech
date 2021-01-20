@@ -1,0 +1,29 @@
+.Switch__switch-container {
+  background: var(--switch-background);
+  border: var(--switch-border) 2px solid;
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin: 0% 10px;
+  cursor: pointer;
+  img {
+    width: 30%;
+    transition: 1s;
+  }
+  .switch-container__switch {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    left: 10%;
+    transition: 1s;
+    background: var(--switch-border);
+    &.dark {
+      left: 60%;
+    }
+  }
+}

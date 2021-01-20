@@ -1,0 +1,27 @@
+footer {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+  background: var(--sky-dark);
+  width: 100vw;
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    div {
+      font-size: 1.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        margin: 0 8px;
+      }
+      img {
+        width: 30px;
+        filter: var(--filter);
+      }
+    }
+  }
+}

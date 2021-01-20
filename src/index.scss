@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --sky-dark: rgb(42, 94, 232);
+  --sky-light: rgb(113, 150, 255); 
+  --sky-gradient: linear-gradient(0deg, var(--sky-light) -0.45%, var(--sky-dark) 91.18%);
+  --text: rgb(10, 35, 66);
+  --text-secondary: #efefef;
+  --switch-background: #ffffff;
+  --switch-border: #6C63FF;
+  --second-font: 'Montserrat', sans-serif;
+  --background-one: #eee;
+  --background-two: #bbb;
+  --filter: invert(90%);
+}
+[data-theme="dark"] {
+  --sky-dark: rgb(10, 35, 66);
+  --sky-light: rgb(40, 62, 81);
+  --text: #efefef;
+  --text-secondary: #6C63FF;
+  --switch-background: #333;
+  --background-one: #111111;
+  --background-two: #333;
+  --filter: invert(0%);
+}
+
+

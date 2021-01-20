@@ -1,0 +1,34 @@
+@import '../../../variables.scss';
+.CardBack__back {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  .back__desc {
+    width: 80%;
+    height: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--switch-border);
+  }
+  .back__button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 30%;
+    button {
+      @include button-default(var(--switch-border));
+      font-size: 1.2rem;
+      width: 60%;
+      a {
+        color: var(--switch-border);
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

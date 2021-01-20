@@ -1,0 +1,56 @@
+@import '../../variables.scss';
+.FullPageModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  @include flex-center;
+  .FullPageModal__inner-container {
+    border-radius: 5px;
+    width: 95%;
+    height: 90%;
+    padding: 2%;
+    background: var(--sky-light);
+    position: relative;
+    .inner-container__close-modal {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      width: 30px;
+      height: 30px;
+      background: var(--switch-background);
+      color: var(--switch-border);
+      border: 1px solid var(--switch-border);
+      border-radius: 50%;
+      font-size: 14px;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+    }
+    // @media only screen and (min-width: 700px) {
+    //   width: 70%;
+    // }
+    // @media only screen and (min-width: 850px) {
+    //   width: 60%;
+    //   height: 85%
+    // }
+    // @media only screen and (min-width: 1050px) {
+    //   width: 50%;
+    //   height: 90%
+    // }
+  }
+}
+.whole-page__opacity-layer {
+  position: fixed;
+  overflow-y: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  background: grey;
+  height: 100vh;
+  width: 100%;
+  z-index: 4;
+}

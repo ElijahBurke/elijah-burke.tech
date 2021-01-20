@@ -1,0 +1,41 @@
+.CardFront__front {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  .front__title {
+    font-size: 2rem;  
+    text-align: center;
+    height: 20%;
+    color: var(--switch-border);
+    font-weight: 500;
+  }
+  .front__stack {
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    .stack__fw {
+      width: 45%;
+      font-size: 1.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--switch-border);
+    }
+  }
+  .front__github {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 35px;
+      filter: var(--filter);
+      
+    }
+  }
+}

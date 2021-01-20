@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import './Profile.scss';
 import Me from './me.png';
 import InScroll from '../../Helpers/InScroll';

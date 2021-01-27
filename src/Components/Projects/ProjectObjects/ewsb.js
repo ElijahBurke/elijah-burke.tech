@@ -10,7 +10,7 @@ export default {
   title: 'EWSB',
   img: [{ title: 'Folder Structure', img: EWSBImg }],
   github: 'https://github.com/ElijahBurke/express-socket-io-boilerplate',
-  url: undefined,
+  url: 'https://www.npmjs.com/package/ewsb-template',
   desc,
   stack: ['Jest', 'MongoDB', 'ExpressJS', 'PostgreSQL', 'Sequelize', 'Mongoose'],
 };

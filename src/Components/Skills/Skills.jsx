@@ -1,36 +1,46 @@
 /* eslint-disable react/prop-types */
-import React, { useRef } from 'react';
+import React from 'react';
 import './Skills.scss';
-import InScroll from '../../Helpers/InScroll';
+// import InScroll from '../../Helpers/InScroll';
+import DisplayImgContainer from './DisplayImgContainer/DisplayImgContainer';
 
+const imgs = [
+  'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png',
+  'https://cdn.worldvectorlogo.com/logos/redux.svg',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/1024px-GraphQL_Logo.svg.png',
+  'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/943/full/ramda.png',
+  'https://iconape.com/wp-content/files/fh/110909/png/typescript.png',
+  'https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg',
+  'https://www.nextontop.com/assets/img/services/web/expressjs.svg',
+  'https://seeklogo.com/images/J/jest-logo-F9901EBBF7-seeklogo.com.png',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png',
+  'https://cdn.worldvectorlogo.com/logos/sequelize.svg',
+  'https://img.icons8.com/color/452/mongodb.png',
+  'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongoose/mongoose.png',
+];
 function Skills() {
-  const skillsRef = useRef();
-  const imgInScroll = InScroll(skillsRef);
+  // const addElsToSlider = (els) => {
+  //   els.forEach((el) => {
+  //     document.querySelector('.skills__carousel').append(DisplayImgForSlider({ img: el }));
+  //   });
+  // };
+
   return (
     <section className="Skills__skills">
       <div className="skills__title">
         Skills
       </div>
       <div className="skills__container">
-        <div className={`container__left ${imgInScroll ? 'inscroll' : ''}`} ref={skillsRef}>
-          <img alt="React" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
-          <img alt="TypeScript" src="https://iconape.com/wp-content/files/fh/110909/png/typescript.png" />
-          <img alt="GraphQL" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/1024px-GraphQL_Logo.svg.png" />
-          <img alt="ExpressJS" src="https://www.nextontop.com/assets/img/services/web/expressjs.svg" />
-          <img alt="PostgreSQL" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" />
-          <img alt="MongoDB" src="https://img.icons8.com/color/452/mongodb.png" />
+        <div className="left__title">
+          I love working on projects on both the frontend
+          and backend with a variety of frameworks.
         </div>
-        <div className="container__right">
-          <div className="left__title">
-            I love working on projects on both the frontend
-            and backend with a variety of frameworks.
-          </div>
-          <div className="left__second">
-            These include React, GraphQL, Angular, JavaScript, TypeScript, PostgreSQL,
-            Sequelize, NodeJS, MongoDB & Mongoose and I love learning new ones!
-          </div>
+        <div className="left__second">
+          These include React, GraphQL, Angular, JavaScript, TypeScript, PostgreSQL,
+          Sequelize, NodeJS, MongoDB & Mongoose and I love learning new ones!
         </div>
       </div>
+      <DisplayImgContainer imgs={imgs} />
       <div className="skills__background1" />
       <div className="skills__background2" />
     </section>

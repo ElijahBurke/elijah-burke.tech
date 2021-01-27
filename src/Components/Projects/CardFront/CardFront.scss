@@ -24,6 +24,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
       color: var(--switch-border);
     }
   }
@@ -32,10 +33,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: infinite smallScale 1s;
     img {
       width: 35px;
       filter: var(--filter);
-      
     }
   }
+}
+
+@keyframes smallScale {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
 }

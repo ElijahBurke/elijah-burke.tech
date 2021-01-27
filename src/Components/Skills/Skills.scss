@@ -3,7 +3,9 @@
   height: 100vh;
   width: 100vw;
   background: var(--background-two);
-  @include flex-center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   flex-direction: column;
   position: relative;
   .skills__background1 {
@@ -25,9 +27,8 @@
   }
   .skills__title {
     width: 100%;
-    height: 12%;
+    height: 20%;
     @include flex-center;
-    align-items: flex-end;
     font-size: 4.6rem;
     color: var(--text);
     z-index: 3;
@@ -35,51 +36,15 @@
   }
   .skills__container {
     z-index: 3;
-    width: 90%;
-    height: 85%;
+    width: 50%;
+    height: 40%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    .container__left {
-      width: 40%;
-      height: 70%;
-      @include flex-center;
-      flex-wrap: wrap;
-      position: relative;
-      background: var(--sky-light);
-      border-radius: 5px;
-      overflow: hidden;
-      &::after {
-        content: '';
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        background: var(--sky-dark);
-        z-index: 2;
-        transition: 0.7s;
-      }
-      &.inscroll::after {
-        width: 0%;
-      }
-      img {
-        margin: 1% 4%;
-        width: 28%;
-        @media only screen and (min-width: 1000px) {
-          width: 24%;
-        }
-      }
-    }
-    .container__right {
-      width: 40%;
-      height: 70%;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
       & > * {
         color: var(--text);
-        text-align: right;
+        text-align: center;
       }
       .left__title {
         font-size: 2.6rem;
@@ -91,6 +56,5 @@
         font-weight: 300;
         margin: 2% 0%;
       }
-    }
   }
 }

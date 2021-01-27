@@ -31,4 +31,15 @@
       }
     }
   }
+  .back__github {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    img {
+      width: 35px;
+      filter: var(--filter);
+    }
+  }
 }

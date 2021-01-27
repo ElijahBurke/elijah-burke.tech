@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import './CardBack.scss';
+import GitHub from '../../Hero/GitHub.svg';
 
 function CardBack({ setProject, setOpen, project }) {
   const set = (proj) => () => {
@@ -26,6 +27,9 @@ function CardBack({ setProject, setOpen, project }) {
         </button>
         )}
       </div>
+      <a className="back__github" href={project.github} rel="noopener noreferrer" target="_blank">
+        <img src={GitHub} alt="" />
+      </a>
     </div>
   );
 }

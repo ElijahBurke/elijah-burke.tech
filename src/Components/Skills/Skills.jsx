@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import './Skills.scss';
-// import InScroll from '../../Helpers/InScroll';
-import DisplayImgContainer from './DisplayImgContainer/DisplayImgContainer';
+import { ReactScrolling } from 'react-auto-glide';
+import 'react-auto-glide/dist/index.css';
 
 const imgs = [
   'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png',
@@ -19,12 +19,11 @@ const imgs = [
   'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongoose/mongoose.png',
 ];
 function Skills() {
-  // const addElsToSlider = (els) => {
-  //   els.forEach((el) => {
-  //     document.querySelector('.skills__carousel').append(DisplayImgForSlider({ img: el }));
-  //   });
-  // };
-
+  const mapper = (img) => (
+    <div className="img__container">
+      <img src={img} alt="" />
+    </div>
+  );
   return (
     <section className="Skills__skills">
       <div className="skills__title">
@@ -40,7 +39,9 @@ function Skills() {
           Sequelize, NodeJS, MongoDB & Mongoose and I love learning new ones!
         </div>
       </div>
-      <DisplayImgContainer imgs={imgs} />
+      <div className="scrolling__container">
+        <ReactScrolling list={imgs} mapper={mapper} width="150px" time="40s" />
+      </div>
       <div className="skills__background1" />
       <div className="skills__background2" />
     </section>

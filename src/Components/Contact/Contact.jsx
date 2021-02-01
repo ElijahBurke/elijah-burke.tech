@@ -19,9 +19,9 @@ function Contact() {
             <div className="links__title">
               You can contact me via:
             </div>
-            <a className="links__email" href="mailto:elijah_burke@hotmail.com">
+            <a className="links__email" href="mailto:elijah@elijah-burke.tech">
               <img src={Email} alt="email svg" />
-              Elijah_Burke@hotmail.co.uk
+              Elijah@elijah-burke.tech
             </a>
             <a className="links__git" href="https://www.github.com/elijahburke" rel="noreferrer" target="_blank">
               <img src={GitHub} alt="github link" />
